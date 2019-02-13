@@ -19,5 +19,12 @@ public class StudentApp {
         std.setAge(34);
         System.out.println(std.getAge());
 
+        Student std2 = new Student("STD002", "Boy", 30);
+
+        System.out.println(std2.getAge());
+
+        System.out.println(std.toString());
+        System.out.println(std2.toString());
+
     }
 }
