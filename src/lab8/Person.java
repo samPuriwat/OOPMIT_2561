@@ -4,12 +4,24 @@ public class Person {
     //properties
     private String name;
     private String pid;
+    private String bornYear;
 
     //constructor
 
     public Person(String name, String pid) {
         this.name = name;
         this.pid = pid;
+    }
+
+    public Person(String name, String pid, String bornYear) {
+        this.name = name;
+        this.pid = pid;
+        this.bornYear = bornYear;
+    }
+
+    public void introduce(){
+        System.out.println("My name is "+this.name);
+        System.out.println("I was born in "+this.bornYear);
     }
     //toString
 
@@ -23,6 +35,14 @@ public class Person {
 
     //getter and setter methods
 
+
+    public String getBornYear() {
+        return bornYear;
+    }
+
+    public void setBornYear(String bornYear) {
+        this.bornYear = bornYear;
+    }
 
     public String getName() {
         return name;
